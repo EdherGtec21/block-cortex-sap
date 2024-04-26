@@ -51,3 +51,6 @@ constant: sign_change_multiplier {
 
 
 #} end additional constants
+
+
+new_lookml_runtime: yes
