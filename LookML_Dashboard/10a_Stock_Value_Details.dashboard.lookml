@@ -13,6 +13,8 @@
     fields: [inventory_by_plant.plant_name_name2, inventory_by_plant.sum_inventory_value_target_currency_for_plant]
     filters:
       inventory_by_plant.week_end_date: this month
+      inventory_by_plant.inventory_value: ">0"
+      inventory_by_plant.quantity_menge: ">0"
     sorts: [inventory_by_plant.sum_inventory_value_target_currency_for_plant desc
         0]
     limit: 500
@@ -103,6 +105,8 @@
       inventory_by_plant.target_currency, inventory_by_plant.company_text_butxt]
     filters:
       inventory_by_plant.week_end_date: this month
+      inventory_by_plant.inventory_value: ">0"
+      inventory_by_plant.quantity_menge: ">0"
     sorts: [inventory_by_plant.plant_name_name2]
     limit: 500
     column_limit: 50
