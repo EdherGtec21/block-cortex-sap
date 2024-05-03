@@ -192,7 +192,6 @@ view: inventory_by_plant {
   measure: sum_inventory_value_target_currency_for_plant {
     type: sum
     sql: ${inventory_value_target_currency} ;;
-    filters: [inventory_value_target_currency: ">0"]
     value_format_name: Greek_Number_Format
     hidden: no
   }
